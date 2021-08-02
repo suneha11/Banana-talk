@@ -1,4 +1,10 @@
-var username = prompt("give me your username!! ")
-var welcomeMessage = "this script works " + username
+var buttonTranslate = document.querySelector("#btn-translate");
+var textInput = document.querySelector("#txt-input");
+var outputDiv = document.querySelector("#output");
 
-alert(welcomeMessage)
+function clickHandler(){
+    outputDiv.innerText="ajjaaajxb "+textInput.value;
+};
+
+buttonTranslate.addEventListener("click",clickHandler )
+

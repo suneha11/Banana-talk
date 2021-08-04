@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banana Speaks</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Shakespeare</title>
+    
     <style>
         textarea {
             width: 80%;
@@ -23,17 +26,42 @@
             margin: 1rem;
             padding: 1rem;
         }
+
+        #title-bar{
+            font font-size: 3rem;
+            padding: 1rem
+        }
+
+        #output{
+             padding: 1rem;
+             font-size: large ;
+        }
+
     </style>
 </head>
 
 <body>
-    <h1>Talk Bananaaaa!</h1>
+    <nav>
+        <div id="title-bar">
+            Royal Shakespeare
+        <div>
+    </nav>
+
     <textarea id="txt-input"
-        placeholder="Enter your text in English here and we will convert it into banana."></textarea>
+        placeholder="Please type your text in here so that our Shakespeare translator can do its magic and convert it to Shakespeare English...."></textarea>
     <button id="btn-translate">Translate</button>
 
     <div style="font-size: larger;">Output is shown here 👇</div>
     <div id="output"></div>
+
+    <footer>
+        <div style="font-size: x-large;">About</div>
+        <p>
+            Shakespeare invented many words and his style of narration in many ways was unique to his time. His ever popular works ( dramas and poems ) makes his language style live even today.
+            Use the translator
+            to convert your text from English to Shakespeare English.
+        </p>
+    </footer>
 
     <script src="app.js" type="text/javascript"></script>
 </body>

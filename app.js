@@ -6,6 +6,8 @@ var outputDiv = document.querySelector("#output");
 
 var serverURL ="https://api.funtranslations.com/translate/shakespeare.json"
 
+// var serverURL="https://api.funtranslations.com/translate/shakespeare.json?"
+
 function getTranslationURL(text) {
     
     return serverURL + "?" + "text=" + text

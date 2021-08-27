@@ -33,5 +33,9 @@ function clickHandler(){
 
 }; 
 
-buttonTranslate.addEventListener("click",clickHandler )
+buttonTranslate.addEventListener("click",clickHandler ) 
+
+var username = prompt("give me your name");
+var welcome_message = "this script works " + username;
+alert(welcome_message);
 

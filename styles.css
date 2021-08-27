@@ -6,13 +6,13 @@
 
 
 :root {
-    --primary:#FDE68A;
-    --black:#064E3B;
+    --primary:#f2c94c;
+    --black: #333333;
     --width-break:600px
 }
 
 body{
-    margin:0;
+    margin:auto;
     font-family: 'Cormorant Garamond', serif;
     color:black;
     font-weight:bold ;
@@ -32,41 +32,52 @@ main{
 }
 
 textarea {
-    box-sizing: border-box;
+    box-sizing:border-box;
     text-align: center;
     display: block;
-    width: 100%;
+    width: var(--width-break);
     min-height: 20vh;
     margin-top: 2rem;
+    margin:1rem auto;
     font-size: large;
     font-family: inherit;
+    border: 1px solid var(--black);
 }
 
 button {
     background-color: var(--primary);
-    border: none;
-    margin: 1rem 0rem;
+    border: 1px solid var(--black);
+    margin:1rem 2rem auto;
+    text-align: center;
     padding: 1rem 2rem;
     font-family: inherit;
     font-size: large;
+    appearance: auto;
 }
 
 
 #output {
     box-sizing: border-box;
-    width: 100%;
+    width: var(--width-break);
     text-align: center;
+    margin-bottom: ;
+    margin:  auto ;
     min-height: 10vh;
     max-height: 20vh;
     overflow: scroll;
     border: 1px solid var(--black);
 }
 
+#textoutput{
+    margin: auto;
+    text-align: center;
+}
+
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 1rem;
     background-color: var(--primary);
     text-align: center;
 }
